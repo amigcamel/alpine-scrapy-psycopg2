@@ -4,5 +4,6 @@ RUN apk update \
   && apk add postgresql-dev \
   && apk add libxml2-dev libxslt-dev \
   && pip install psycopg2 \
+  && pip install lxml==4.2.5 \
   && pip install scrapy \
   && apk del build-deps
